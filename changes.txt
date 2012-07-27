@@ -61,10 +61,8 @@ ADD AFTER:
 
 FILE: catalog/view/theme/default/template/common/footer.tpl
 FIND:
-     </ul>
-   </div>
- </div>
-ADD AFTER:
+     </body></html>
+ADD BEFORE:
 <script type="text/javascript">
 <?php echo $snippet ?>
 </script>
