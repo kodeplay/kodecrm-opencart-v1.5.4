@@ -10,7 +10,7 @@ Installation Instruction
 
 With Vqmod 
 
-* Copy the files from the 'added' and 'modified' directory to your target 
+* Copy the files from the 'added' directory to your target 
 installation directory of OpenCart.
 
 * Give permission to to the following from System -> Users -> User Groups [Edit]
