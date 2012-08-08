@@ -66,6 +66,8 @@ class ControllerKodecrmFeed extends Controller {
 			require_once (DIR_SYSTEM . 'library/kodecrm/feed.php');
 
 			$feed = kodecrm_feed_create($arr);
+
+                        header('Content-Type: application/rss+xml; charset=utf-8');
 			
 			echo $feed;
 
