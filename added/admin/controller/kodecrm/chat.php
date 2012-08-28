@@ -24,12 +24,16 @@ class ControllerKodecrmChat extends Controller {
         $this->data['entry_app_id'] = $this->language->get('entry_app_id');
         $this->data['entry_custom'] = $this->language->get('entry_custom');
         $this->data['entry_ui'] = $this->language->get('entry_ui');
-
+        $this->data['entry_status'] = $this->language->get('entry_status');
+        
         $this->data['button_save'] = $this->language->get('button_save');
         $this->data['button_cancel'] = $this->language->get('button_cancel');
 
         $this->data['tab_general'] = $this->language->get('tab_general');
 
+        $this->data['text_enabled'] = $this->language->get('text_enabled');
+        $this->data['text_disabled'] = $this->language->get('text_disabled');
+        
         if (isset($this->session->data['success'])) {
             $this->data['success'] = $this->session->data['success'];
             unset($this->session->data['success']);
@@ -71,6 +75,12 @@ class ControllerKodecrmChat extends Controller {
             $this->data['kodecrm_custom'] = $this->request->post['kodecrm_custom'];
         } else {
             $this->data['kodecrm_custom'] = $this->config->get('kodecrm_custom');
+        }
+
+        if (isset($this->request->post['kodecrm_widget_status'])) {
+            $this->data['kodecrm_widget_status'] = $this->request->post['kodecrm_widget_status'];
+        } else {
+            $this->data['kodecrm_widget_status'] = $this->config->get('kodecrm_widget_status');
         }
 
         if (isset($this->request->post['kodecrm_ui'])) {

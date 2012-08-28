@@ -19,6 +19,18 @@
     <div class="content">
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form">
         <table class="form">
+            <tr>
+                <td><?php echo $entry_status; ?></td>
+                <td><select name="kodecrm_widget_status">
+                    <?php if ($kodecrm_widget_status) { ?>
+                        <option value="1" selected="selected"><?php echo $text_enabled; ?></option>
+                        <option value="0"><?php echo $text_disabled; ?></option>
+                    <?php } else { ?>
+                        <option value="1"><?php echo $text_enabled; ?></option>
+                        <option value="0" selected="selected"><?php echo $text_disabled; ?></option>
+                    <?php } ?>
+                </select></td>
+            </tr>
           <tr>
             <td><?php echo $entry_app_id; ?></td>
             <td><input name="kodecrm_app_id" size="40" value="<?php echo $kodecrm_app_id?>" /></td>
