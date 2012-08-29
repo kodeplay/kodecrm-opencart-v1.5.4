@@ -48,6 +48,22 @@ lines of code to these files as per the instructions in changes.txt
     You can do so from System -> Users -> User Groups [Edit]    
 
 
+------------------------------------------------------------------------------------------------------
+
+*  Now sign up for kodecrm here - http://kodecrm.com/signup/
+   After signing up , please login to the kodecrm admin dashboard . 
+   click on settings -> integration -> javascript snippet
+   copy the app id from below code . 
+   app id is the value of  _kcrm['app_id'] 
+   
+   Now paste the app id in your opencart admin panel 
+   
+   copy the product feed url from opencart admin panel and paste it into Product feed of kodecrm admin dashboard . 
+   
+   Thats it - you have completed integrating live chat for your online store . 
+   for any queries , doubts - please email us on info@kodeplay.com
+ 
+
 Further help and customized versions
 ====================================
 
@@ -61,3 +77,4 @@ You can contact us at info@kodeplay.com.
 
 KodeCRM
 http://www.kodecrm.com
+

@@ -45,13 +45,17 @@ class ControllerCommonFooter extends Controller {
 
 		$this->data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
 		
-		require_once(DIR_SYSTEM . 'library/kodecrm/chatwidget.php');
-
-		$this->data['snippet'] = kodecrm_chatwidget_render(
-			$this->config->get('kodecrm_app_id'),
-			$this->config->get('kodecrm_custom'),
-            $this->config->get('kodecrm_ui') !== 'popout'
-		);
+		if($this->config->get('kodecrm_widget_status')) {
+			require_once(DIR_SYSTEM . 'library/kodecrm/chatwidget.php');
+	
+			$this->data['snippet'] = kodecrm_chatwidget_render(
+				$this->config->get('kodecrm_app_id'),
+				$this->config->get('kodecrm_custom'),
+	            $this->config->get('kodecrm_ui') !== 'popout'
+			);
+		} else {
+			$this->data['snippet'] = '';
+		}
 				
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/footer.tpl')) {
 			$this->template = $this->config->get('config_template') . '/template/common/footer.tpl';
