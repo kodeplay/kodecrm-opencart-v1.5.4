@@ -22,8 +22,6 @@ class ControllerKodecrmChat extends Controller {
         $this->data['heading_title'] = $this->language->get('heading_title');
 
         $this->data['entry_app_id'] = $this->language->get('entry_app_id');
-        $this->data['entry_custom'] = $this->language->get('entry_custom');
-        $this->data['entry_ui'] = $this->language->get('entry_ui');
         $this->data['entry_status'] = $this->language->get('entry_status');
         
         $this->data['button_save'] = $this->language->get('button_save');
@@ -71,27 +69,11 @@ class ControllerKodecrmChat extends Controller {
             $this->data['kodecrm_app_id'] = $this->config->get('kodecrm_app_id');
         }
 
-        if (isset($this->request->post['kodecrm_custom'])) {
-            $this->data['kodecrm_custom'] = $this->request->post['kodecrm_custom'];
-        } else {
-            $this->data['kodecrm_custom'] = $this->config->get('kodecrm_custom');
-        }
-
         if (isset($this->request->post['kodecrm_widget_status'])) {
             $this->data['kodecrm_widget_status'] = $this->request->post['kodecrm_widget_status'];
         } else {
             $this->data['kodecrm_widget_status'] = $this->config->get('kodecrm_widget_status');
         }
-
-        if (isset($this->request->post['kodecrm_ui'])) {
-            $this->data['kodecrm_ui'] = $this->request->post['kodecrm_ui'];
-        } else if ($this->config->get('kodecrm_ui')) {
-            $this->data['kodecrm_ui'] = $this->config->get('kodecrm_ui');
-        } else {
-            $this->data['kodecrm_ui'] = "iframe";
-        }
-
-        $this->data['ui_choices'] = array('iframe', 'popout');
 
         $this->template = 'kodecrm/chat.tpl';
         $this->children = array(

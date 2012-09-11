@@ -49,9 +49,7 @@ class ControllerCommonFooter extends Controller {
 			require_once(DIR_SYSTEM . 'library/kodecrm/chatwidget.php');
 	
 			$this->data['snippet'] = kodecrm_chatwidget_render(
-				$this->config->get('kodecrm_app_id'),
-				$this->config->get('kodecrm_custom'),
-	            $this->config->get('kodecrm_ui') !== 'popout'
+				$this->config->get('kodecrm_app_id')
 			);
 		} else {
 			$this->data['snippet'] = '';

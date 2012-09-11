@@ -32,20 +32,6 @@
                 </select></td>
             </tr>
           <tr>
-            <td><?php echo $entry_app_id; ?></td>
-            <td><input name="kodecrm_app_id" size="40" value="<?php echo $kodecrm_app_id?>" /></td>
-          </tr>
-          <tr>
-            <td><?php echo $entry_ui; ?></td>
-            <td>
-                <select name="kodecrm_ui">
-                <?php foreach ($ui_choices as $ui) { ?>                  
-                  <option value="<?php echo $ui; ?>" <?php echo ($kodecrm_ui === $ui ? 'selected="selected"' : ''); ?>><?php echo $ui; ?></option>
-                <?php } ?>
-                </select>
-            </td>
-          </tr>
-          <tr>
             <td><?php echo $entry_custom; ?></td>
             <td><textarea name="kodecrm_custom" cols="40" rows="5"><?php echo $kodecrm_custom; ?></textarea></td>
           </tr>
