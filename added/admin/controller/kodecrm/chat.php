@@ -75,6 +75,12 @@ class ControllerKodecrmChat extends Controller {
             $this->data['kodecrm_widget_status'] = $this->config->get('kodecrm_widget_status');
         }
 
+        if (isset($this->request->post['kodecrm_widget_status'])) {
+            $this->data['kodecrm_widget_status'] = $this->request->post['kodecrm_widget_status'];
+        } else {
+            $this->data['kodecrm_widget_status'] = $this->config->get('kodecrm_widget_status');
+        }
+
         $this->template = 'kodecrm/chat.tpl';
         $this->children = array(
             'common/header',
