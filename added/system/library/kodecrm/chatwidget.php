@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Helpers for rendering the chat widget from a 
+ * Helpers for rendering the chat widget from a
  * bunch of settings
  *
  * @param String $appid The KodeCRM appid
@@ -12,10 +12,12 @@ function kodecrm_chatwidget_render($appid) {
     $snippet = "var _kcrm = {};";
     $snippet .= "_kcrm['app_id'] = '$appid';";
     $snippet .= "(function (w, d, undefined) {";
-    $snippet .= "    var script = document.createElement(\"script\");";
-    $snippet .= "    script.type = \"text/javascript\";";
-    $snippet .= "    script.src = \"http://kodecrm.com/static/javascript/widget.js\";";
-    $snippet .= "    d.body.appendChild(script);";
+    $snippet .= "    var k = document.createElement(\"script\"),";
+    $snippet .= "    r = document.getElementsByTagName('script')[0],";
+    $snippet .= "    p = ('https:' == document.location.protocol ? 'https://' : 'http://');";
+    $snippet .= "    k.type = \"text/javascript\";";
+    $snippet .= "    k.src =  p + 'kodecrm.com/static/javascript/widget.js';";
+    $snippet .= "    r.parentNode.appendChild(k);";
     $snippet .= "}) (window, document);";
     return $snippet;
 }
@@ -33,4 +35,3 @@ function kodecrm_chatwidget_settings($custom_settings) {
     }
     return $settings;
 }
-
