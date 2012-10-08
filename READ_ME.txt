@@ -13,6 +13,18 @@ With Vqmod
 * Copy the files from the 'added' directory to your target
 installation directory of OpenCart.
 
+* now a very important step !!!
+inside the kodecrm extension that you downloaded  go to added -> vqmod -> xml -> kodecrm.xml
+go to line number 72
+replace '__your theme name__'
+with 
+your actual theme name 
+examples are 'default' , 'shopica' and so on 
+
+This step is important and many users are missing this step . please take care . 
+
+contact info@kodeplay.com for any doubts 
+
 ---------------------------------------------------------------------------------------------------
 
 Without Vqmod
