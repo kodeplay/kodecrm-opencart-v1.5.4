@@ -1,35 +1,30 @@
- ________________
-|                |
-| KodeCRM Module |
-|________________|
+KodeCRM module for Opencart 1.5.3.x
+===================================
 
+Installation Instruction
+------------------------
 
-
-Installation Instruction 
-=========================
-
-With Vqmod 
+With Vqmod
+~~~~~~~~~~
 
 * Copy the files from the 'added' directory to your target
-installation directory of OpenCart.
+  installation directory of OpenCart.
 
-* now a very important step !!!
-inside the kodecrm extension that you downloaded  go to added -> vqmod -> xml -> kodecrm.xml
-go to line number 72
-replace '__your theme name__'
-with 
-your actual theme name 
-examples are 'default' , 'shopica' and so on 
+* Now a very important step!!!  inside the kodecrm extension that you
+  downloaded go to added -> vqmod -> xml -> kodecrm.xml go to line
+  number 72 replace '__your theme name__' with your actual theme name
+  examples are 'default', 'shoppica' and so on.
 
-This step is important and many users are missing this step . please take care . 
+  This step is important and many users are missing this step. Please
+  take care.  contact info@kodeplay.com for any doubts.
 
-contact info@kodeplay.com for any doubts 
-
----------------------------------------------------------------------------------------------------
 
 Without Vqmod
-* You may want to do a backup copy of the following files because these will be overwritten:
+~~~~~~~~~~~~~
 
+* You may want to do a backup copy of the following files because
+  these will be overwritten:
+  
     admin/controller/common/header.php
     admin/language/english/common/header.php
     admin/view/template/common/header.tpl
@@ -37,9 +32,11 @@ Without Vqmod
     catalog/view/theme/default/template/common/footer.tpl
 
 
-* Copy the files from the 'added' directory to your target installation directory of OpenCart.
+* Copy the files from the 'added' directory to your target
+  installation directory of OpenCart.
 
-* There are a few files that need to be modified which are as follows - 
+* There are a few files that need to be modified which are as
+  follows -
 
     admin/controller/common/header.php
     admin/language/english/common/header.php
@@ -50,43 +47,56 @@ Without Vqmod
 Now open the changes.txt file in this directory and manually add the
 lines of code to these files as per the instructions in changes.txt
 
----------------------------------------------------------------------------------------------------
 
-* Once you have added the files using either of the methods above,
-    it's time to give permission to the admin user to access these two actions: 
-    kodecrm/chat     
-    kodecrm/feed
+After adding files, give permissions in opencart admin
+------------------------------------------------------
 
-    You can do so from System -> Users -> User Groups [Edit]    
+Once you have added the files using either of the methods above, it's
+time to give permission to the admin user to access these two actions:
+
+  kodecrm/chat     
+  kodecrm/feed
+
+You can do so from System -> Users -> User Groups [Edit]
 
 
-------------------------------------------------------------------------------------------------------
+Signup for a new account at KodeCRM
+-----------------------------------
 
-*  Now sign up for kodecrm here - http://kodecrm.com/signup/
-   After signing up , please login to the kodecrm admin dashboard . 
-   click on settings -> integration -> javascript snippet
-   copy the app id from below code . 
-   app id is the value of  _kcrm['app_id'] 
-   
-   Now paste the app id in your opencart admin panel 
-   
-   copy the product feed url from opencart admin panel and paste it into Product feed of kodecrm admin dashboard . 
-   
-   Thats it - you have completed integrating live chat for your online store . 
-   for any queries , doubts - please email us on info@kodeplay.com
+Now sign up for kodecrm here - http://kodecrm.com/signup/ 
+
+When you login for the first time, you will be shown integration
+wizard for Opencart. Here all instructions are arranged in a step by
+step manner. You will notice that some steps from above will be
+repeated there. It's for the benefit of those who signup first in
+KodeCRM before installing the module. If you have already carried out
+a step, just skip it by clicking on "Next"
  
 
-Further help and customized versions
-====================================
+Customizations
+--------------
 
-This package has been successfully tested for a standard OpenCart 1.5.x
-Don't use previous Opencart versions with this module.
+This package has been successfully tested for a standard OpenCart
+1.5.3.x. Don't use this module with previous or newer Opencart
+versions.
 
-If you need a customized version of this module, let us know and we
-can create it.
+Once you have chat widget and product feeds up and running, you can
+customize the appearance of the widget to match the look and feel of
+your website/online store. 
 
-You can contact us at info@kodeplay.com.
+
+Getting help
+------------
+
+For any doubts or queries, you can contact us at any of the following
+email addresses
+
+- info@kodeplay.com
+- sales@kodeplay.com
+- vineet.naik@kodeplay.com
 
 KodeCRM
 http://www.kodecrm.com
+
+Follow us on twitter @kodecrm for latest updates
 
