@@ -72,7 +72,7 @@
 	<file name="catalog/view/theme/__your theme name__/template/common/footer.tpl">
 		<operation>
 			<search position="before"><![CDATA[
-                        </body></html>
+                        </body>
                         ]]></search>
 			<add><![CDATA[
 						 <script type="text/javascript">
