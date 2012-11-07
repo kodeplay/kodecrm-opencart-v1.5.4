@@ -56,9 +56,9 @@ After adding files, give permissions in opencart admin
 ------------------------------------------------------
 
 Once you have added the files using either of the methods above, it's
-time to give permission to the admin user to access these two actions:
+time to give permission to the admin user to access these two actions::
 
-  kodecrm/chat     
+  kodecrm/chat
   kodecrm/feed
 
 You can do so from System -> Users -> User Groups [Edit]
