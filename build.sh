@@ -7,6 +7,9 @@ rm -rf $bdir
 rm $bdir.tar.gz
 rm $bdir.zip
 
+mkdir -p $bdir/added
+mkdir -p $bdir/modified
+
 cp -R ./added $bdir/
 cp -R ./modified $bdir/
 cp ./changes.txt $bdir/
