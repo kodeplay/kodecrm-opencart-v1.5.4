@@ -1,8 +1,8 @@
-KodeCRM module for Opencart 1.5.3.x
-===================================
+KodeCRM module for Opencart 1.5.4
+=================================
 
 This package has been successfully tested for a standard OpenCart
-1.5.3.x. Don't use this module with previous or newer Opencart
+1.5.4. Don't use this module with previous or newer Opencart
 versions.
 
 Installation Instructions

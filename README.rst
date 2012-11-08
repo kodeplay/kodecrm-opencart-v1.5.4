@@ -1,4 +1,4 @@
-KodeCRM integration module for Opencart ver. 1.5.3.x
+KodeCRM integration module for Opencart ver. 1.5.4.x
 ====================================================
 
 This README is for developers working on the module. For installation,
