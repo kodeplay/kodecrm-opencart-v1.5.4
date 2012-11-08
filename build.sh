@@ -7,20 +7,10 @@ rm -rf $bdir
 rm $bdir.tar.gz
 rm $bdir.zip
 
-for f in `find ./ -type f | grep '^\.\/[^.git|build.sh|README.rst].*[^~]$'`
-do
-    tdir=`echo "$f" | sed -e "s/^.\/*//"`
-    tdirname=`dirname $tdir`
-    if [ $tdirname  == "." ];
-    then
-        cp $f $bdir/
-    else
-        mkdir -p $bdir/$tdirname
-        cp -r $f $bdir/$tdirname/
-    fi
-done
-
-cp README.rst $bdir/README.txt
+cp -R ./added $bdir/
+cp -R ./modified $bdir/
+cp ./changes.txt $bdir/
+cp ./install.txt $bdir/
 
 tar czf $bdir.tar.gz $bdir
 zip -rq $bdir.zip $bdir
