@@ -49,6 +49,7 @@ $_['text_report_sale_return']          = 'Returns';
 $_['text_report_sale_coupon']          = 'Coupons';
 $_['text_report_product_viewed']       = 'Viewed';
 $_['text_report_product_purchased']    = 'Purchased';
+$_['text_report_customer_online']      = 'Customers Online';
 $_['text_report_customer_order']       = 'Orders';
 $_['text_report_customer_reward']      = 'Reward Points';
 $_['text_report_customer_credit']      = 'Credit';
@@ -77,6 +78,7 @@ $_['text_voucher_theme']               = 'Voucher Themes';
 $_['text_weight_class']                = 'Weight Classes';
 $_['text_length_class']                = 'Length Classes';
 $_['text_zone']                        = 'Zones';
+
 $_['text_kodecrm']                     = 'KodeCRM';
 $_['text_kodecrmfeed']                 = 'Feed';
 $_['text_chat_widget']                 = 'Chat Widget';
