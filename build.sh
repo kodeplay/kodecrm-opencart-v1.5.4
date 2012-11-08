@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ocver=1.5.3.x
+ocver=1.5.4
 bdir=./build/kodecrm-opencart$ocver
 
 rm -rf $bdir
